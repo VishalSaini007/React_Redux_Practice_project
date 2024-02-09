@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+.item{
+   border: 1px solid black;
+   width: 500px;
+
+}
+
+.cart
+{
+  float: right;
+  margin-right: 110px;
+
+}
