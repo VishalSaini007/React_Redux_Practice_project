@@ -1,7 +1,7 @@
 import React from 'react'
+import { Connect } from 'react-redux'
+import {addToCart} from '../services/Actions/actions.js'
 
-export const HomeContainer = () => {
-  return (
-    <div>HomeContainer</div>
-  )
-}
+
+
+export default HomeContainer ;
