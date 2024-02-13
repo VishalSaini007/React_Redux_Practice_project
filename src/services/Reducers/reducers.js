@@ -2,25 +2,22 @@
 import { ADD_TO_CART } from "../constants"
 
 const initialState = {
-    cartData :[]
+    cardData :[]
 }
 
-
-export default function cartItems (state =initialState , action) {
-
+export default function cartItems (state = [] , action) {
+     console.warn("action", action)
     switch(action.type)
     {
         case ADD_TO_CART:
-          return {
+          return [
                 ...state,
-                cartData : action.data,
-          }
+                {cardData : action.data},
+              ]
           break;
 
           default:
-            return {state}
-
-
+            return state
 
     }
  

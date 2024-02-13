@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
-import cartItems from '../Reducers'
+import cartItems from '../Reducers/reducers.js'
 
 
-export default  combineReducers ({cartItems})
+export default  combineReducers ({cartItems});
 

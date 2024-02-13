@@ -1,7 +1,10 @@
 import React from 'react'
 import '../App.css'
+import cartItems from '../services/Reducers/reducers'
 
-export const Home = () => {
+
+export const Home = (props) => {
+  console.log("props ",props)
   return (
     <>
         <div>Home</div>
@@ -15,10 +18,23 @@ export const Home = () => {
             <h1>Samsung</h1>
             <img width={100} height={200} src="https://i.ebayimg.com/00/s/MTUwMFgxMTY3/z/B~MAAOSwyhtjD-Ws/$_57.JPG?set_id=8800005007" alt="phone image" />
             <span>Price : 45,000 Rs</span>
-            <button >Add to Cart</button>
+            {/* <button onClick=
+            { props.addToCartHandler(
+              { 
+                price :"20000",
+                name : "samsung"
+              }
+                                    )
+            } >Add to Cart</button> */}
+
+<button onClick={() => props.addToCartHandler({ price: "20000", name: "samsung" })}>Add to Cart</button>
+
+ 
 
         </div>
     </>
 
   )
 }
+
+
